@@ -445,12 +445,6 @@ footer {
     flex-direction: column;
     padding: 30px 20px;
   }
-
-  .about img {
-    width: 150px;
-    margin-bottom: 20px;
-  }
-
   .about-text h2 {
     font-size: 1.8rem;
   }
@@ -486,3 +480,13 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+
+
+  .about img {
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+
