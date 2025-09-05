@@ -341,103 +341,107 @@ footer {
   border-top: 1px solid #222;
 }
 
-/* ✅ Responsive Media Queries */
 
-/* For tablets (max-width: 1024px) */
+
+/* ===========================
+   MEDIA QUERIES
+=========================== */
+
+/* Tablets */
 @media (max-width: 1024px) {
+  .navbar {
+    padding: 15px 30px;
+  }
   .projects-container {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
-
   .project-card img {
-    height: 180px;
+    height: 160px;
   }
-
-  .hero {
-    padding: 80px 20px;
+  .about-content {
+    flex-direction: column;
+    text-align: center;
   }
-
-  .services {
-    padding: 60px 20px;
+  .about-img {
+    margin-bottom: 20px;
   }
 }
 
-/* For mobile devices (max-width: 768px) */
+/* Mobile */
 @media (max-width: 768px) {
-  .projects-container {
-    grid-template-columns: 1fr; /* stack projects */
-    gap: 20px;
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
   }
-
-  .project-card {
-    margin: 0 auto;
-    max-width: 90%;
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
   }
-
-  .project-card img {
-    height: auto;
-    max-height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-  }
-
-  .hero {
-    padding: 60px 15px;
-    text-align: center;
-  }
-
   .hero h1 {
     font-size: 1.8rem;
   }
-
   .hero .subtitle {
     font-size: 1rem;
   }
-
   .services {
-    padding: 50px 15px;
+    padding: 40px 20px;
   }
-
   .service-cards {
     flex-direction: column;
-    gap: 20px;
+    align-items: center;
   }
-
-  .card {
-    width: 100%;
+  .projects {
+    padding: 40px 20px;
+  }
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+  .project-card {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .project-card img {
+    height: 150px;
+  }
+  .about {
+    padding: 40px 20px;
+  }
+  .about-text p {
+    font-size: 0.95rem;
+  }
+  .skills {
+    padding: 40px 20px;
+  }
+  .contact {
+    padding: 40px 20px;
   }
 }
 
-/* For very small phones (max-width: 480px) */
+/* Small Phones */
 @media (max-width: 480px) {
   .hero h1 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
-
   .hero .subtitle {
     font-size: 0.9rem;
   }
-
-  .projects-container {
-    gap: 15px;
-  }
-
-  .project-card {
-    padding: 15px;
-  }
-
-  .project-card img {
-    max-height: 180px;
-  }
-
-  .services h2,
   .projects h2,
+  .services h2,
   .about h2,
   .skills h2,
   .contact h2 {
     font-size: 1.4rem;
   }
+  .project-card img {
+    height: 130px;
+  }
+  .project-card p {
+    font-size: 0.85rem;
+  }
+  .about-text p {
+    font-size: 0.9rem;
+  }
 }
-
-
