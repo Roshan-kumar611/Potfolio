@@ -353,7 +353,7 @@ footer {
     padding: 15px 30px;
   }
   .projects-container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns:  1fr;
     gap: 20px;
   }
   .project-card img {
