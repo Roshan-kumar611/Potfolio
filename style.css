@@ -361,69 +361,85 @@ footer {
   }
 }
 
-/* Mobile Devices */
-@media (max-width: 768px) {
+/* ----------------- Mobile Fixes ----------------- */
 @media (max-width: 767px) {
+  /* Hero Section */
   .hero {
     padding: 80px 15px;
+    text-align: center;
   }
 
   .hero h1 {
     font-size: 1.6rem;
     line-height: 1.5;
+    margin-bottom: 15px;
   }
 
   .hero p {
     font-size: 1rem;
     line-height: 1.7;
+    margin-bottom: 25px;
   }
 
+  /* Services Section */
   .services {
     padding: 50px 15px;
+    text-align: center;
+  }
+
+  .services h2 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
   }
 
   .services-container {
-    grid-template-columns: 1fr; /* stack services in 1 column */
+    display: grid;
+    grid-template-columns: 1fr; /* stack in single column */
+    gap: 20px;
   }
 
   .service-box {
     padding: 20px;
+    font-size: 0.95rem;
   }
+
+  /* Featured Projects */
+/* Mobile First (default: single column) */
+.projects-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 0 15px;
 }
 
-  .services,
-  .projects,
-  .skills,
-  .about,
-  .contact {
-    padding: 50px 15px;
-  }
-@media (max-width: 767px) {
-  .projects-container {
-    grid-template-columns: 1fr; /* single column on mobile */
-    gap: 20px;
-  }
-
-  .project-box img {
-    height: 200px;  /* slightly taller images on mobile */
-  }
-
-  .project-box h3 {
-    font-size: 1.1rem;
-  }
-
-  .project-box p {
-    font-size: 0.9rem;
-  }
+.project-card {
+  background: #111;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
-  .about-img {
-    width: 200px;
-    height: 200px;
-  }
-  .about-text h2 {
-    font-size: 1.8rem;
-  }
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  max-height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
 }
+
+.project-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}}
+
 
 /* Very Small Devices */
 @media (max-width: 480px) {
@@ -435,5 +451,42 @@ footer {
   }
   .about-text h2 {
     font-size: 1.5rem;
+  }
+}
+
+/* -------- Projects Section Responsive -------- */
+
+
+
+/* Tablets (≥ 576px → 2 columns) */
+@media (min-width: 576px) {
+  .projects-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+/* Laptops (≥ 992px → 3 columns) */
+@media (min-width: 992px) {
+  .projects-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 0 40px;
+  }
+}
+
+/* Desktops (≥ 1200px → 3 columns, more spacing) */
+@media (min-width: 1200px) {
+  .projects-container {
+    gap: 30px;
+    padding: 0 60px;
+  }
+
+  .project-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .project-card p {
+    font-size: 1rem;
   }
 }
