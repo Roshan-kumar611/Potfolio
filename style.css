@@ -363,28 +363,59 @@ footer {
 
 /* Mobile Devices */
 @media (max-width: 768px) {
+@media (max-width: 767px) {
   .hero {
-    padding: 60px 20px 30px; /* reduced bottom padding */
-    min-height: auto;
+    padding: 80px 15px;
   }
+
   .hero h1 {
-    font-size: 2rem;
+    font-size: 1.6rem;
+    line-height: 1.5;
   }
+
   .hero p {
     font-size: 1rem;
+    line-height: 1.7;
   }
+
+  .services {
+    padding: 50px 15px;
+  }
+
+  .services-container {
+    grid-template-columns: 1fr; /* stack services in 1 column */
+  }
+
+  .service-box {
+    padding: 20px;
+  }
+}
 
   .services,
   .projects,
   .skills,
   .about,
   .contact {
-    padding: 40px 20px;
+    padding: 50px 15px;
   }
+@media (max-width: 767px) {
   .projects-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* single column on mobile */
+    gap: 20px;
   }
 
+  .project-box img {
+    height: 200px;  /* slightly taller images on mobile */
+  }
+
+  .project-box h3 {
+    font-size: 1.1rem;
+  }
+
+  .project-box p {
+    font-size: 0.9rem;
+  }
+}
   .about-img {
     width: 200px;
     height: 200px;
