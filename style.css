@@ -46,13 +46,7 @@ body {
   color: #00e5d4;
 }
 
-/* Toggle (hidden on desktop) */
-.menu-toggle {
-  display: none;
-  font-size: 1.8rem;
-  cursor: pointer;
-  color: #fff;
-}
+
 
 
 .btn {
@@ -385,9 +379,7 @@ footer {
 /* Mobile Devices */
 @media (max-width: 768px) {
   /* ===== Navbar ===== */
-  .menu-toggle {
-    display: block; /* show hamburger */
-  }
+
 
   .nav-links {
     position: absolute;
@@ -423,6 +415,7 @@ footer {
   /* ===== Hero Section ===== */
   .hero {
     padding: 60px 20px;
+    margin-bottom: -30px;
   }
 
   .hero h1 {
