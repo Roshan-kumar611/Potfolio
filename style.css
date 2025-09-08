@@ -341,13 +341,11 @@ footer {
   border-top: 1px solid #222;
 }
 
-
-
 /* ===========================
    MEDIA QUERIES
 =========================== */
 
-/* Tablets */
+/* Tablets (≤1024px) */
 @media (max-width: 1024px) {
   .navbar {
     padding: 15px 30px;
@@ -359,9 +357,55 @@ footer {
   .about-img {
     margin-bottom: 20px;
   }
+
+  /* ✅ Services Section */
+  .service-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .service-cards .card {
+    width: 85%;
+    max-width: 500px;
+    margin: 0 auto 30px;
+    font-size: 1.05rem;
+  }
+  .service-cards .card h3 {
+    font-size: 1.4rem;
+  }
+  .service-cards .card i {
+    font-size: 2.2rem;
+  }
+
+  /* ✅ Projects Section */
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+  .project-card {
+    width: 85%;
+    max-width: 650px;
+    margin: 0 auto 30px;
+    font-size: 1.05rem;
+  }
+  .project-card h3 {
+    font-size: 1.5rem;
+  }
+  .project-card p {
+    font-size: 1.15rem;
+  }
+  .project-card .btn {
+    font-size: 1rem;
+    padding: 10px 22px;
+  }
+  .project-card img {
+    height: 220px;
+    object-fit: cover;
+  }
 }
 
-/* Mobile */
+/* Mobile (≤768px) */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -379,35 +423,43 @@ footer {
   .hero .subtitle {
     font-size: 1rem;
   }
-  .services {
-    padding: 40px 20px;
-  }
-  .service-cards {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .about {
-    padding: 40px 20px;
-  }
-  .about-text p {
-    font-size: 0.95rem;
-  }
-  .skills {
-    padding: 40px 20px;
-  }
+  .services,
+  .about,
+  .skills,
   .contact {
     padding: 40px 20px;
   }
+  .about-text p {
+    font-size: 1rem;
+  }
+
+  /* Services & Projects Full Width */
+  .service-cards .card,
+  .project-card {
+    width: 95%;
+    max-width: 100%;
+    font-size: 1.05rem;
+  }
+  .service-cards .card h3,
+  .project-card h3 {
+    font-size: 1.4rem;
+  }
+  .service-cards .card p,
+  .project-card p {
+    font-size: 1.1rem;
+  }
+  .project-card img {
+    height: 190px;
+  }
 }
 
-/* Small Phones */
+/* Small Phones (≤480px) */
 @media (max-width: 480px) {
   .hero h1 {
     font-size: 1.5rem;
   }
   .hero .subtitle {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
   }
   .projects h2,
   .services h2,
@@ -416,82 +468,24 @@ footer {
   .contact h2 {
     font-size: 1.4rem;
   }
- 
   .about-text p {
-    font-size: 0.9rem;
-  }
-   
-}
-
-/* ===========================
-   MEDIA QUERIES
-=========================== */
-
-/* Tablets and below (not laptop) */
-@media (max-width: 1024px) {
-
-  /* ✅ Services Section */
-  .service-cards {
-    flex-direction: column;
-    align-items: center;
+    font-size: 0.95rem;
   }
 
-
-  /* ✅ Service Cards */
-  .service-cards .card {
-    width: 80%;          
-    max-width: 500px;    /* slightly smaller than projects */
-    margin: 0 auto 30px;
-  }
-
-  /* ✅ Projects Section */
-  .projects-container {
-    display: flex;
-    flex-direction: column; /* stack vertically */
-    gap: 25px;
-  }
-
-  .project-card {
-    width: 80%;          /* fixed large width */
-    max-width: 600px;    /* don’t let it grow too big */
-    margin: 0 auto 30px; /* center align + spacing */
-  }
-
+  /* Smaller Cards */
   .project-card img {
-    height: 200px; /* taller images for clarity */
-    object-fit: cover;
-  }
-}
-
-/* Mobiles */
-@media (max-width: 768px) {
-  .service-cards .card,
-  .project-card {
-    max-width: 100%;   /* take full width on small screens */
-  }
-
-  .project-card img {
-    height: 180px; /* slightly smaller for phones */
-  }
-}
-
-/* Small Phones */
-@media (max-width: 480px) {
-  .project-card img {
-    height: 150px; /* compact for small devices */
+    height: 160px;
   }
   .service-cards .card {
-    padding: 20px;
+    padding: 18px;
   }
-}
-
-@media (max-width: 768px) {
   .service-cards .card h3,
   .project-card h3 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
   .service-cards .card p,
   .project-card p {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
+
