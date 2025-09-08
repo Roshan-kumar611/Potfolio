@@ -349,6 +349,10 @@ footer {
 @media (max-width: 1024px) {
   .navbar {
     padding: 15px 30px;
+    font-size: 1.5rem;
+  }
+    .hero .social-icons a{
+    font-size: 1.3rem;
   }
   .about-content {
     flex-direction: column;
@@ -411,6 +415,7 @@ footer {
     flex-direction: column;
     gap: 15px;
     padding: 15px;
+    font-size: 1.5rem;
   }
   .nav-links {
     flex-wrap: wrap;
@@ -419,6 +424,9 @@ footer {
   }
   .hero h1 {
     font-size: 1.8rem;
+  }
+  .hero .social-icons a{
+    font-size: 1.3rem;
   }
   .hero .subtitle {
     font-size: 1rem;
@@ -438,18 +446,18 @@ footer {
   .project-card {
     width: 95%;
     max-width: 100%;
-    font-size: 1.05rem;
+    font-size: 1.4rem;
   }
   .service-cards .card h3,
   .project-card h3 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
   .service-cards .card p,
   .project-card p {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
   }
   .project-card img {
-    height: 190px;
+    height: 200px;
   }
 }
 
