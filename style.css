@@ -436,10 +436,12 @@ footer {
     align-items: center;
   }
 
+
+  /* ✅ Service Cards */
   .service-cards .card {
-    width: 100%;       /* full width */
-    max-width: 500px;  /* keep it neat on bigger tablets */
-    margin: 0 auto 20px auto;
+    width: 80%;          
+    max-width: 500px;    /* slightly smaller than projects */
+    margin: 0 auto 30px;
   }
 
   /* ✅ Projects Section */
@@ -450,9 +452,9 @@ footer {
   }
 
   .project-card {
-    width: 100%;       /* full width */
-    max-width: 600px;  /* good size for tablets */
-    margin: 0 auto;
+    width: 80%;          /* fixed large width */
+    max-width: 600px;    /* don’t let it grow too big */
+    margin: 0 auto 30px; /* center align + spacing */
   }
 
   .project-card img {
