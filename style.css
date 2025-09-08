@@ -393,19 +393,24 @@ footer {
     flex-direction: column;
     align-items: center;
   }
-  .projects {
-    padding: 40px 20px;
-  }
-  .projects-container {
-    flex-direction: column;
-  }
-  .project-card {
-    max-width: 100%;
-    margin: 0 auto;
-  }
-  .project-card img {
-    height: 150px;
-  }
+ .projects {
+  padding: 40px 20px;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap; /* allows wrapping for larger screens */
+  gap: 20px; /* optional spacing */
+}
+
+/* For larger screens: show multiple per row */
+.project-card {
+  flex: 1 1 calc(50% - 20px); /* 2 per row by default */
+  max-width: calc(50% - 20px);
+}
+.project-card img {
+  height: 150px;
+}
   .about {
     padding: 40px 20px;
   }
@@ -444,4 +449,22 @@ footer {
   .about-text p {
     font-size: 0.9rem;
   }
+   .projects {
+  padding: 40px 20px;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap; /* allows wrapping for larger screens */
+  gap: 20px; /* optional spacing */
+}
+
+/* For larger screens: show multiple per row */
+.project-card {
+  flex: 1 1 calc(50% - 20px); /* 2 per row by default */
+  max-width: calc(50% - 20px);
+}
+.project-card img {
+  height: 150px;
+}
 }
