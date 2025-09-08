@@ -353,7 +353,7 @@ footer {
     padding: 15px 30px;
   }
   .projects-container {
-    grid-template-columns:  1fr;
+    flex-direction: column;
     gap: 20px;
   }
   .project-card img {
@@ -397,7 +397,7 @@ footer {
     padding: 40px 20px;
   }
   .projects-container {
-    grid-template-columns: 1fr;
+    flex-direction: column;
   }
   .project-card {
     max-width: 100%;
