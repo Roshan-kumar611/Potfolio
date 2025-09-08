@@ -482,3 +482,14 @@ footer {
     padding: 20px;
   }
 }
+
+@media (max-width: 768px) {
+  .service-cards .card h3,
+  .project-card h3 {
+    font-size: 1.4rem;
+  }
+  .service-cards .card p,
+  .project-card p {
+    font-size: 1.2rem;
+  }
+}
