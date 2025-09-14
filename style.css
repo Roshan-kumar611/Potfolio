@@ -208,8 +208,18 @@ body {
   text-align: center;
   margin-bottom: 40px;
 }
+.about h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
 .about h2 span {
   color: #00fff7;
+}
+.about .social-icons{
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
 .about-content {
   display: flex;
@@ -219,8 +229,8 @@ body {
   flex-wrap: wrap;
 }
 .about-img {
-  width: 260px;
-  height: 260px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
   overflow: hidden;
   border: 3px solid #00fff7;
@@ -423,13 +433,13 @@ footer {
     gap: 10px;
   }
   .hero h1 {
-    font-size: 1.8rem;
+    font-size: 2.4rem;
   }
   .hero .social-icons a{
-    font-size: 1.3rem;
+    font-size: 2.0rem;
   }
   .hero .subtitle {
-    font-size: 1rem;
+    font-size: 1.8rem;
   }
   .services,
   .about,
@@ -444,17 +454,17 @@ footer {
   /* Services & Projects Full Width */
   .service-cards .card,
   .project-card {
-    width: 95%;
+    width: 97%;
     max-width: 100%;
-    font-size: 1.4rem;
+    font-size: 2.0rem;
   }
   .service-cards .card h3,
   .project-card h3 {
-    font-size: 1.5rem;
+    font-size: 2.4rem;
   }
   .service-cards .card p,
   .project-card p {
-    font-size: 1.4rem;
+    font-size: 2.0rem;
   }
   .project-card img {
     height: 200px;
