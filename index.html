@@ -1,140 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio👤</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-<script src="https://kit.fontawesome.com/5c2cb74b83.js" crossorigin="anonymous"></script></head>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/5c2cb74b83.js" crossorigin="anonymous"></script>
+</head>
 <body>
 
   <!-- ===== NAVBAR ===== -->
   <header>
-    <nav class="navbar">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
 
-      <div class="logo">Roshan.</div>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#projects">Featured Projects</a></li>
-        <li><a href="#about">About me</a></li>
-        <li><a href="#contact">Contact me</a></li>
+      <div class="brand">
+        <div class="logo">Roshan.</div>
+      </div>
+
+      <!-- mobile hamburger -->
+      <button class="menu-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Open menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+
+      <ul id="main-nav" class="nav-links" role="menubar">
+        <li role="none"><a role="menuitem" href="#home">Home</a></li>
+        <li role="none"><a role="menuitem" href="#projects">Featured Projects</a></li>
+        <li role="none"><a role="menuitem" href="#about">About me</a></li>
+        <li role="none"><a role="menuitem" href="#contact">Contact me</a></li>
       </ul>
-      <a href="#" class="btn">View Resume</a>
+
+      <a href="#" class="btn resume-btn">View Resume</a>
     </nav>
   </header>
 
   <!-- About Me Section -->
-<section class="about" id="about">
-  <h2><span>My Bio</span> About <span>me.</span></h2>
-  <h1>Hi, I am <span class="highlight">Roshan Kumar Mandal</span></h1>
-  <div class="about-content">
-    <div class="about-img" style="border-radius: 50%;">
-      <img src="profilepic.jpg" alt="Profile Picture">
-    </div>
-    <div class="about-text">
-      <p>
-        I’m a passionate <span>Frontend Developer</span> who loves turning ideas into 
-        beautiful and functional websites. With experience in modern frameworks and 
-        design tools, I aim to deliver smooth user experiences.
-      </p>
-      <p>
-        I enjoy exploring new technologies, solving problems creatively, and 
-        constantly improving my skills to build impactful digital products.
-      </p>
-      
-      <a href="resume.pdf" target="_blank" class="btn">View Resume</a>
-    </div>
-  </div>
-      <div class="social-icons">
-      <a href="#"><i class="fab fa-github"></i></a>
-      <a href="#"><i class="fab fa-linkedin"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
-    </div>
-</section>
+  <section class="about" id="about">
+    <h2><span>My Bio</span> About <span>me.</span></h2>
+    <h1>Hi, I am <span class="highlight">Roshan Kumar Mandal</span></h1>
+    <div class="about-content">
+      <div class="about-img" style="border-radius: 50%;">
+        <img src="profilepic.jpg" alt="Profile Picture" />
+      </div>
+      <div class="about-text">
+        <p>
+          I’m a passionate <span>Frontend Developer</span> who loves turning ideas into
+          beautiful and functional websites. With experience in modern frameworks and
+          design tools, I aim to deliver smooth user experiences.
+        </p>
+        <p>
+          I enjoy exploring new technologies, solving problems creatively, and
+          constantly improving my skills to build impactful digital products.
+        </p>
 
-<!-- ===== SERVICES ===== -->
+        <a href="resume.pdf" target="_blank" class="btn">View Resume</a>
+      </div>
+    </div>
+    <div class="social-icons">
+      <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
   <section id="services" class="services">
     <h2>Services <span class="highlight">What I do.</span></h2>
     <div class="service-cards">
       <div class="card ">
         <h3>01</h3>
-        <i class="fas fa-code"></i>
+        <i class="fas fa-code" aria-hidden="true"></i>
         <h4>Web Development</h4>
         <p>Building digital solutions using HTML, CSS, JavaScript, and Tailwind.</p>
       </div>
       <div class="card">
         <h3>02</h3>
-        <i class="fa-solid fa-chart-simple"></i>
+        <i class="fa-solid fa-chart-simple" aria-hidden="true"></i>
         <h4>Data Analysis</h4>
-      <p>I analyze data, create reports, and provide insights using tools likeExcel, and visualization dashboards.</p>
+        <p>I analyze data, create reports, and provide insights using tools like Excel, and visualization dashboards.</p>
       </div>
       <div class="card">
         <h3>03</h3>
-        <i class="fas fa-pen-nib"></i>
+        <i class="fas fa-pen-nib" aria-hidden="true"></i>
         <h4>Content Writing</h4>
         <p>Writing impactful narratives that engage and inform audiences.</p>
       </div>
     </div>
   </section>
 
-<!-- Projects Section -->
-<section class="projects" id="projects">
-  <h2><span>Featured</span> Projects</h2>
-  <div class="projects-container">
-    
-    <!-- Project 1 -->
-   <div class="project-card">
-      <img src="Screenshot 2025-09-02 213923.png" alt="Project 2">
-      <h3>WeatherApp</h3>
-      <p>A web app that shows the weather condition of the specific city.</p>
-      <a href="https://roshan-kumar611.github.io/WeatherApp/" target="_blank" class="btn">View Project</a>
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <h2><span>Featured</span> Projects</h2>
+    <div class="projects-container">
+
+      <!-- Project 1 -->
+      <div class="project-card">
+        <img src="Screenshot 2025-09-02 213923.png" alt="Weather app screenshot" />
+        <h3>WeatherApp</h3>
+        <p>A web app that shows the weather condition of the specific city.</p>
+        <a href="https://roshan-kumar611.github.io/WeatherApp/" target="_blank" class="btn">View Project</a>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <img src="Screenshot 2025-09-03 211850.png" alt="Age calculator screenshot" />
+        <h3>AgeCalculator</h3>
+        <p>It's a website that is used to calculate a person's age.</p>
+        <a href="https://roshan-kumar611.github.io/Age-Calculator/" target="_blank" class="btn">View Project</a>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card">
+        <img src="Screenshot 2025-09-03 212038.png" alt="Password generator screenshot" />
+        <h3>Password Generator</h3>
+        <p>It's an interactive website that is used to generate random strong passwords.</p>
+        <a href="#" target="_blank" class="btn">View Project</a>
+      </div>
+
+      <!-- Add more projects -->
+      <div class="project-card">
+        <img src="project4.jpg" alt="Blog project" />
+        <h3>Blog Website</h3>
+        <p>A responsive blog platform with categories, tags, and SEO features.</p>
+        <a href="#" target="_blank" class="btn">View Project</a>
+      </div>
+
     </div>
-
-    <!-- Project 2 -->
-    <div class="project-card">
-      <img src="Screenshot 2025-09-03 211850.png" alt="Project 1">
-      <h3>AgeCalculator</h3>
-      <p>It's a website that is used to calculate a persons age.</p>
-      <a href="https://roshan-kumar611.github.io/Age-Calculator/" target="_blank" class="btn">View Project</a>
-    </div> 
-
-    <!-- Project 3 -->
-    <div class="project-card">
-      <img src="Screenshot 2025-09-03 212038.png" alt="Project 3">
-      <h3>Password Generator</h3>
-      <p>It's an interative website that is used to generate a random strong passwords.</p>
-      <a href="#" target="_blank" class="btn">View Project</a>
-    </div>
-
-    <!-- ✅ Add more projects here (will auto align) -->
-    <div class="project-card">
-      <img src="project4.jpg" alt="Project 4">
-      <h3>Blog Website</h3>
-      <p>A responsive blog platform with categories, tags, and SEO features.</p>
-      <a href="#" target="_blank" class="btn">View Project</a>
-    </div>
-
-    <div class="project-card">
-      <img src="project4.jpg" alt="Project 4">
-      <h3>Blog Website</h3>
-      <p>A responsive blog platform with categories, tags, and SEO features.</p>
-      <a href="#" target="_blank" class="btn">View Project</a>
-    </div>
-
-    <div class="project-card">
-      <img src="project4.jpg" alt="Project 4">
-      <h3>Blog Website</h3>
-      <p>A responsive blog platform with categories, tags, and SEO features.</p>
-      <a href="#" target="_blank" class="btn">View Project</a>
-    </div>
-
-  </div>
-</section>
-
-
-
-
+  </section>
 
   <!-- ===== SKILLS ===== -->
   <section class="skills">
@@ -157,11 +151,11 @@
       <div class="contact-info">
         <p><i class="fas fa-phone"></i> +91 9019789226</p>
         <p><i class="fas fa-envelope"></i> roshankumar5912@gmail.com</p>
-        <p><i class="fas fa-map-marker-alt"></i> Bengalore, India</p>
+        <p><i class="fas fa-map-marker-alt"></i> Bengaluru, India</p>
       </div>
       <form class="contact-form">
-        <input type="text" placeholder="Full Name" required>
-        <input type="email" placeholder="Email Address" required>
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email Address" required />
         <textarea placeholder="Message" required></textarea>
         <button type="submit" class="btn">Send Message</button>
       </form>
@@ -170,8 +164,9 @@
 
   <!-- ===== FOOTER ===== -->
   <footer>
-    <p>© 2025 . Designed by Roshan kumar</p>
+    <p>© 2025 . Designed by Roshan Kumar</p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
